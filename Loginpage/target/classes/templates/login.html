@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form action="#" th:action="@{/login}" th:object="${user}"
+		method="post">
+
+
+		<tr>
+
+			<div align="center">
+				<strong>User Login</strong>
+			</div>
+
+			</td>
+		</tr>
+
+		<tr>
+			<td>Username</td>
+			<td><input type="text" th:field="*{username}"
+				class="form-control" /></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td><input type="password" th:field="*{password}"
+				class="form-control" /></td>
+		</tr>
+		<tr>
+			<td colspan="2"><button type="submit" class="btn btn-info"
+					align="right">Login</button></td>
+		</tr>
+
+	</form>
+</body>
+</html>
